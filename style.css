@@ -28,6 +28,7 @@ body
 {
 	color: #135796 !important;
 	font-weight: 600;
+	font-size: 18px;
 	float: right;
 	text-align: left;
 }
@@ -70,12 +71,50 @@ body
 {
 	margin-left: 50px;
 	margin-right: 25px;
+	color: #767676
 }
 
 .img-fluid
 {
 	margin-top: 20px;
 }
+
+
+/*---- whatdo ---*/
+
+#whatdo
+{
+	padding: 100px 0;
+}
+
+.design-icon
+{
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.code-icon
+{
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.whatdo-text
+{
+	padding-right: 50px;
+	color: #767676
+}
+
+#whatdo h4, h5
+{
+	font-weight: 600;
+	color: #767676;
+}
+
+
+
+/*---- media queries ---*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -87,6 +126,18 @@ body
     .img-fluid
 	{
 		margin-top: 0px;
+	}
+
+	.design-icon, .code-icon, .whatdo-text
+	{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	#whatdo h4, h5
+	{
+		margin-left: 50px;
+		margin-right: 50px;
 	}
 } 
 
@@ -123,17 +174,29 @@ body
 	{
 		background-image: 
 			url(images/headerblobs.svg),
-			url(images/darkblob.svg);
+			url(images/darkblob.svg),
+			url(images/pinkblob.svg);
 		background-size: 
 			100%,
+			15%,
 			15%;
 		background-position: 
 			top,
-			0 125%;
+			0 500px,
+			100% 650px;
 		background-repeat: no-repeat;
 	}
-} 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+	.design-icon, .code-icon, .whatdo-text
+	{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	#whatdo h4, h5
+	{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+} 
 
