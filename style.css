@@ -434,17 +434,6 @@ p {
 		margin-right: 50px;
 	}
 
-	#darkblobsection
-	{
-		background-image: 
-		url(images/rectblob.svg);
-		background-size: 
-			350% !important;
-		background-position: 
-			top;
-		background-repeat: no-repeat;
-	}
-
 	.square
 	{
 		margin: 20px 20px
@@ -457,15 +446,20 @@ p {
 } 
 
 @media only screen and (max-width: 766px) {
-	#darkblobsection
+	#aboutme
 	{
 		background-image: 
 		url(images/rectblob.svg);
 		background-size: 
-			250%;
+			cover;
 		background-position: 
 			top;
 		background-repeat: no-repeat;
+	}
+
+	#darkblobsection
+	{
+		background-image: none;
 	}
 
 	.profile-icon
@@ -487,6 +481,7 @@ p {
 		padding-top: 5px;
 		margin-left: 20%;
 		margin-right: 20%;
+		padding-bottom: 50px;
 	}
 
 	#projects
@@ -516,7 +511,7 @@ p {
 
 	#projects
 	{
-		padding-top: 20px;
+		padding-top: 0px;
 		margin-top: 0px;
 	}
 } 
