@@ -395,6 +395,11 @@ p {
 	height: 80%;
 }
 
+.credits
+{
+	font-size: 12px;
+	color: white;
+}
 
 /*---- media queries ---*/
 
