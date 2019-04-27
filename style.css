@@ -314,6 +314,53 @@ p {
 	margin: 0px;
 }
 
+.dev-work
+{
+	font-size: 20px;
+	color: #FF4185 !important;
+	margin-top: 100px;
+}
+
+
+/*---- contact ---*/
+
+#contact
+{
+	padding-top: 40%;
+	background-image: 
+		url(images/largepinkblob.svg);
+	background-position: 
+		top;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+#contact .col-md .connect-col
+{
+	padding: 0px;
+}
+.contact-title
+{
+	font-size: 40px;
+	font-family: 'Stardos Stencil', cursive;
+	margin-top: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.contact-button
+{
+	margin: 10px;
+	height: 50%;
+}
+
+.end-connect
+{
+	padding-bottom: 250px;
+}
+
 /*---- media queries ---*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -355,9 +402,14 @@ p {
 	{
 		margin: 20px 20px
 	}
+
+	.contact-title
+	{
+		margin-top: 200px;	
+	}
 } 
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 766px) {
 	#darkblobsection
 	{
 		background-image: 
@@ -369,34 +421,61 @@ p {
 		background-repeat: no-repeat;
 	}
 
-		.profile-icon
-		{
-			height: 60%;
-			margin-top: 15%;
-			margin-left: 100px;
-			margin-right: 100px;
-			margin-bottom: 0px;
-		}
+	.profile-icon
+	{
+		height: 60%;
+		margin-top: 15%;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-bottom: 0px;
+	}
 
-		#aboutme h5
-		{
-			padding-top: 0px;
-			margin-left: 20%;
-		}
+	#aboutme h5
+	{
+		padding-top: 0px;
+		margin-left: 20%;
+	}
 
-		.aboutme-text
-		{
-			padding-top: 5px;
-			margin-left: 20%;
-			margin-right: 20%;
-		}
+	.aboutme-text
+	{
+		padding-top: 5px;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	#projects
+	{
+		background-image: 
+			url(images/largeblueblob.svg);
+		background-size: 
+			100%;
+		background-position: 
+			50% 1000px !important;
+		background-repeat: no-repeat;
+	}
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...} 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) {
+	#projects{
+		background-image: 
+			url(images/largeblueblob.svg);
+		background-size: 
+			100%;
+		background-position: 
+			top;
+		background-repeat: no-repeat;
+	}
+
+	
+	#projects
+	{
+		padding-top: 20px;
+		margin-top: 0px;
+	}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -428,17 +507,23 @@ p {
 			url(images/headerblobs.svg),
 			url(images/darkblob.svg),
 			url(images/pinkblob.svg),
-			url(images/smolblueblobs.svg);
+			url(images/smolblueblobs.svg),
+			url(images/largeblueblob.svg),
+			url(images/projects.svg);
 		background-size: 
 			100%,
 			15%,
 			15%,
-			20%;
+			20%,
+			100%,
+			1.5%;
 		background-position: 
 			top,
 			0 500px,
 			100% 650px,
-			100% 1550px;
+			100% 1550px,
+			50% 1950px,
+			10% 1900px;
 		background-repeat: no-repeat;
 	}
 
@@ -464,6 +549,12 @@ p {
 	{
 		height: 60%;
 		margin-left: 50px;
+	}
+
+	#projects
+	{
+		padding-top: 20px;
+		margin-top: 0px;
 	}
 
 	#aboutme h5

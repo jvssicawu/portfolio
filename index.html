@@ -28,17 +28,17 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">HOME</a>
+        <a class="nav-link" href="jvssicawu.github.io/home/">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
+        <a class="nav-link" href="#aboutme">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">PROJECTS</a>
+        <a class="nav-link" href="#projects">PROJECTS</a>
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
+        <a class="nav-link" href="#contact-title">CONTACT</a>
       </li>
     </ul>
   </div>
@@ -105,6 +105,8 @@
 <section id="projects">
 	<div class="container">
 		<h4 id="projects-title" align="center">PROJECTS</h4>
+
+		<!-- Design Work -->
 		<div class="row justify-content-md-center">
 			<div class="col-md-4 square">
 				<h4 class="design-work">DESIGN WORK</h4>
@@ -139,15 +141,81 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Dev Projects -->
+
+		<section id="dev-projects">
+		<div class="row justify-content-md-center">
+			<div class="col-md-4 square">
+				<h4 class="dev-work">DEV WORK</h4>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-md-4 square">
+				<div class="hovereffect">
+					<img class="img-responsive" src="images/campus-exp.svg" alt="">
+					<div class="overlay">
+						<h2>Campus Explorer</h2>
+						<p>A course-querying application.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 square">
+				<div class="hovereffect">
+					<img class="img-responsive" src="images/bbbbhotel.svg" alt="">
+					<div class="overlay">
+						<h2>Database System</h2>
+						<p>Implementation of a hotel database.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
 	</div>
 </section>
 </section>
 
 <!-- Let's Connect. -->
 
+<section id="contact">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md connect-col">
+				<p class="contact-title" id="contact-title">Let's Connect.</p>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col end-connect">
+			<a href="https://github.com/jvssicawu" target="_blank"><img class="contact-button" src="images/github-icon.svg" alt="GitHub" onmouseover="this.src='images/github-icon-hover.svg';" onmouseout="this.src='images/github-icon.svg';"/></a>
+
+			<a href="mailto:jessicawu.98@hotmail.ca"><img class="contact-button" src="images/email-icon.svg" alt="E-mail" onmouseover="this.src='images/email-icon-hover.svg';" onmouseout="this.src='images/email-icon.svg';"/></a>
+
+			<a href="https://www.linkedin.com/in/jvssicawu/" target="_blank"><img class="contact-button" src="images/linkedin-icon.svg" alt="LinkedIn" onmouseover="this.src='images/linkedin-icon-hover.svg';" onmouseout="this.src='images/linkedin-icon.svg';"/></a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
 
 </body>
 </html>
